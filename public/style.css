@@ -18,12 +18,12 @@ h1{
 }
 .data{
     color: black;
-    border: 1px solid black;
+    border: 1px solid rgb(254, 254, 254);
     margin: 10px 0px;
-    padding: 0px 10px;
+    padding: 0px 20px;
     background-color: rgb(217, 198, 245);
-    box-shadow: inset -4px -2px 10px;
-    
+    box-shadow: inset 4px 2px 10px;
+    border-radius: 20px;
 }
 a{
     position: fixed;
@@ -32,8 +32,12 @@ a{
     width: 50px;
     height: 20px;
     padding: 10px;
-    background-color: azure;
+    background-color: rgb(217, 198, 245);
     justify-content: center;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 2px 2px 8px white;
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    border: 1px solid black;
 }
