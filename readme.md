@@ -1,4 +1,5 @@
-This is specially made for my backend journey with apna college delta batch.
+
+There I used Node, Express, Ejs for backend and basic html cssfor frontend.
 
 For creating a RESTful APIs ..>
 
