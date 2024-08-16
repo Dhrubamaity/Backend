@@ -13,21 +13,21 @@ app.use(express.urlencoded({extended:true}));
 app.use(methodOverride('_method'))
 
 let posts = [
-    {
-        id:         uuidv4(),
-        username:   "Dhruba",
-        content:    "Iam a full stack developer"        
-    },
-    {
-        id:         uuidv4(),
-        username:   "Nayan",
-        content:    "Iam a MALopps developer" 
-    },
-    {
-        id:         uuidv4(),
-        username:   "Swarna",
-        content:    "Iam a java developer" 
-    },
+    // {
+    //     id:         uuidv4(),
+    //     username:   "Dhruba",
+    //     content:    "Iam a full stack developer"        
+    // },
+    // {
+    //     id:         uuidv4(),
+    //     username:   "Nayan",
+    //     content:    "Iam a MALopps developer" 
+    // },
+    // {
+    //     id:         uuidv4(),
+    //     username:   "Swarna",
+    //     content:    "Iam a java developer" 
+    // },
 ]
 
 app.delete("/posts/:id",(req,res)=>{

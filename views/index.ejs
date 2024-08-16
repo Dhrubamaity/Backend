@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Data</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>CHITTER</h1>
+    <h1>Task Manager</h1> <br>
+    <div class="add">
+        <a href="http://localhost:8080/posts/new">Add new task</a>
+    </div>
     <div class="container">
         <% for(post of posts){%>
             <div class="data">
-                <h4>@<%=post.username%></h4>
+                <h4>@<%=post.username%> </h4>
                 <p><%=post.content%></p>
-                <a href="http://localhost:8080/posts/<%=post.id%>">see details</a> &nbsp;
-                <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
-                <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
-                    <button>Delete</button>
-                </form>
+                <div class="function">
+                    <a href="http://localhost:8080/posts/<%=post.id%>">Details</a> &nbsp;
+                    <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+                    <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                        <button>Delete</button>
+                    </form>
+                </div>
             </div>
-        <%}%>
-        <a class="add" href="http://localhost:8080/posts/new">Add+</a>
+            <%}%>
+
     </div>
 </body>
+
 </html>
